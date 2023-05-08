@@ -13,8 +13,10 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout });
 
+console.log('Введите текст');
+
 const answer = rl.on("line", (line) => {
-  if (line == "close") {
+  if (line == "exit") {
     rl.close();
   } else {
     writeText.write(line);
